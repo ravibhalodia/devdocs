@@ -21,7 +21,7 @@ Customers can make purchases in two ways:
 
 To place order as a new customer, use the `createCustomer` mutation to register the new customer account in the store.
 
-{:.bs-callout .bs-callout-info}
+{:.bs-callout-info}
 Skip this step if you want to place order as a guest user.
 
 **Request:**
@@ -92,7 +92,7 @@ mutation {
 }
 ```
 
-["Get customer authorization token"]({{ page.baseurl }}/graphql/get-customer-authorization-token.html) describes the mutation further.
+[Authorization tokens]({{page.baseurl}}/graphql/authorization-tokens.html) describes the mutation further.
 
 ## Verify this step {#verify-step}
 
