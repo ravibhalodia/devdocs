@@ -4,8 +4,13 @@ description: |
   We exclude from this list proofreading, spelling checks, and all minor updates.
 link: /whats-new.html
 thread: /whatsnew-feed.xml
-updated: Thu Feb 6 20:18:03 2020
+updated: Tue Feb 11 10:07:40 2020
 entries:
+- description: Added a topic for the [ColumnsEditor UI component](https://devdocs.magento.com/guides/v2.3/ui_comp_guide/components/ui-columns-editor.html).
+  versions: 2.3.x
+  type: New topic
+  date: February 5, 2020
+  link: https://github.com/magento/devdocs/pull/6394
 - description: Added release notes and documentation for the following Magento
     Cloud Suite packages:<br/>- ece-tools 2002.1.0<br/>- magento/magento-cloud-patches
     1.0.1<br/>- magento/magento-cloud-docker 1.0.0<br/>- magento/magento-cloud-components 1.0.2
