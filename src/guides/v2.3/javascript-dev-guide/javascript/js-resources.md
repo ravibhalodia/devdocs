@@ -2,7 +2,6 @@
 group: javascript-developer-guide
 subgroup: 1_Javascript
 title: JavaScript resources in Magento
-redirect_from: /guides/v2.2/javascript-dev-guide/javascript/requirejs_concept.html
 ---
 
 ## Overview {#m2devgde-js-resources-intro}
@@ -53,7 +52,7 @@ JS resources are accessed using relative paths.
 *  Called in script:
 
    ```javascript
-   require(["js/theme.js"], function(){
+   require(["js/theme"], function(){
    });
    ```
 
