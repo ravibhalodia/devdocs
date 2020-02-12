@@ -112,26 +112,13 @@ If rake fails on your environment, generate the preview [using jekyll](#using-je
 
 1. Create a `_config.local.yml` file at the root of the project directory and exclude all versions except the one that you want to preview.
 
-   The following example will generate Magento 2.2 documentation only.
+   The following example excludes the `guides` directory from generation completely and disables the link checker hook:
 
    ```yaml
-    exclude:
-     - /community/
-     - /swagger/
-     - /vagrant/
-     - /guides/m1x/
-     - /guides/v2.0/
-     - /guides/v2.1/
-    # - /guides/v2.2/
-     - /guides/v2.3/
+   exclude:
+     - guides
 
-    # Excluded in config.yml
-     - /scss/
-     - /bin/
-     - /node_modules/
-     - /vendor/
-     - /.*
-     - /Rakefile
+   check_links: false
    ```
 
 1. Run the preview command:
@@ -146,7 +133,7 @@ If rake fails on your environment, generate the preview [using jekyll](#using-je
    -  Removes the `_site/` directory, which contains previously generated preview files.
    -  Generates a new preview and opens the landing page in a web browser.
 
-If you don't have the `_config.local.yml` file at the root of your `devdocs/` directory, the rake will generate all versions of the documentation.
+If you do not have the `_config.local.yml` file at the root of your `devdocs/` directory, the rake applies the default configuration from `_config.yml`.
 
 ### To build v2.0 documentation
 
